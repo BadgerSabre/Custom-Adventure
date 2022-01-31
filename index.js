@@ -12,4 +12,11 @@ switch(firstAnswer) {
     break
     case 'sneak':
         window.prompt('You enter the crypt of the castle.  There is a horde of ghouls that notice you and charge you. Do you attempt to outrun them or cast control undead?')
+            switch(secondAnswer) {
+                case 'attempt to outrun' :
+                    window.prompt('Are you crazy? The ghouls easily catch you and rip you to pieces.  Refresh to try again.')
+                break
+                case 'cast control undead' :
+                    window.prompt('The ghouls stop a few feet before you.  One points to a door at the end of a hallway. Do you follow the ghoul through the door or do you go back the way you came?')
+            }
 }
