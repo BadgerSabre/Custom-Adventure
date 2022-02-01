@@ -1,49 +1,35 @@
-let firstAnswer = window.prompt('Do you levetate or sneak?')
+let firstAnswer = window.prompt('Do you head left or right?')
 switch(firstAnswer) {
-    case 'levetate':
-        window.prompt('You quickly float to the top of the walls.  There is no one here.  There are two seperate towers. Do you explore the right or left?')
+    case 'left':
+       let secondAnswer = window.prompt(`You come across a stray cat. 
+        It scampers off down a small hole, just large enough for you to crawl through. 
+        Do you follow it, or continue on your path?`)
             switch(secondAnswer) {
-                case 'right':
-                    window.prompt('You descend stairs into the throne room.  There is a red dragon glaring at you.  You see the stone under his front claw.  Do you cast fireball or ray of frost?')
-                        switch(finalAnswer){
-                            case 'fireball':
-                                window.alert('You really casted a fireball at a red dragon?  It has no affect, the dragon breathes fire and incinerates you.  Refresh to try again.')
+                case 'follow':
+                    let thirdAnswer = window.prompt('You follow the cat to a colony of cats, nestled in a fort of warm  blankets and subsisting off of inexplicably warm soup. They are content with you staying, but you wonder if you should alert the world to this magical safe haven.')
+                        switch(thirdAnswer) {
+                            case 'stay':
+                                window.alert(`You live happily amongst the cats for the rest of your days.`)
                             break
-                            case 'ray of frost':
-                                window.alert('Citrical hit! The spell pierces the dragons scales and hit it right in the heart.  The dragon collapses dead and the stone is yours!')
+                            case 'spread the word':
+                                window.alert('After leaving the cat colony, you are never able to find it again; without proof, no one believes your story, which passes into legend nonetheless.')
                             break
                         }
                 break
-                case 'left':
-                    window.prompt('You descend stairs into the dungeon.  There is a suspicious man in a cell that calls out to you, "I know why you are here and I can help you obtain the stone. If only you would set me free." Do you set him free or let him rot?')
-                    switch(finalAnswer){
-                        case 'set him free':
-                            window.alert('You open the cell door and he presses a hidden button on the wall behind you.The wall opens revealing a room filled with treasure, including the sacred stone!')
-                        break
-                        case 'let him rot':
-                            window.alert('You wander the dungeon for an hour with no luck.  Your torch runs out and you are lost in the darkness. Refresh to try again.')
+                case 'continue':
+                    let thirdAnswer = window.prompt('You come across a chamber that reaches upward to a shining light above. There is a long, winding staircase, and a much quicker, but rickety-looking ladder that leads up toward the light. Which do you take?')
+                        switch(thirdAnswer){
+                            case 'ladder':
+                                window.alert('After ascending a few feet up the ladder, one of its rungs snaps, and you comedically fall through each of the rungs below. Sheepish, you return home.')
                             break
-                    }
-                break
+                            case 'staircase':
+                                window.alert('After ascending the staircase, you discover a shiny blue stone, which you take home and cherish forever.')
+                            break
+
+                        }
             }
     break
-    case 'sneak':
-        window.prompt('You enter the crypt of the castle.  There is a horde of ghouls that notice you and charge you. Do you attempt to outrun them or cast control undead?')
-            switch(secondAnswer) {
-                case 'attempt to outrun':
-                    window.alert('Are you crazy? The ghouls easily catch you and rip you to pieces.  Refresh to try again.')
-                break
-                case 'cast control undead':
-                    window.prompt('The ghouls stop a few feet before you.  One walks toward a door at the end of a hallway and motions for you to follow. Do you follow the ghoul through the door or do you go back the way you came?')
-                        switch(finalAnswer){
-                            case 'follow':
-                                window.alert('The ghoul leads you to an alchemist lab.  You look through the notes on the table and discover the recipe to turn iron into gold!')
-                            break
-                            case 'go back':
-                                window.alert('You are a coward, but at least you are alive. Refresh to try again.')
-                            break
-                        }
-                break
-            }
+    case 'right':
+        window.prompt('You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. Which path do you take?')
     break
 }
